@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        background-color: #082258;
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        height: 70px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav ul li {
+        padding: 20px 0;
+    }
+
+    .logo {
+        font-weight: 750;
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .home {
+        display: flex;
+        padding: 30px 50px;
+        text-align: justify;
+        background-color: #2f519a;
+        color: white;
+    }
+
+    .home p {
+        padding: 10px;
+    }
+
+    .home a {
+        color: white;
+        font-weight: 700;
+    }
+
+    .about {
+        background-color: #082258;
+        padding: 30px 50px;
+        color: white;
+    }
+
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+
+    table {
+        border: 2px solid #f9f7f7;
+    }
+
+    th,
+    td {
+        border: 1px solid;
+        padding: 10px;
+        text-align: center;
+        width: 500px;
+    }
+
+    .projects {
+        background-color: #2f519a;
+        color: white;
+        padding: 30px 50px;
+    }
+
+    .skills {
+        background-color: #082258;
+        padding: 30px 50px;
+        color: white;
+    }
+    .skill{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .skill div img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skill div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home img {
+        width: 100px;
+        margin-right: 20px;
+        margin-left: 20px;
+        border: 4px solid;
+    }
+    .contact{
+        background-color: #2f519a;
+        color: white;
+        padding: 30px 50px;
+        align-items: center;
+        text-align: center;
+    }
+    .contact input,textarea{
+        margin: 10px;
+        height: 20px;
+        text-align: center;
+    }
+    .contact textarea{
+        height: 50px;
+    }
+    .contact div{
+        border: 5px solid #082258;
+        padding: 30px;
+        border-radius: 20px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    footer {
+        background-color: #082258;
+        padding: 30px 50px;
+        color: white;
+        text-align: center;
+    }
+    footer p span{
+        font-size: 10px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">ILHAM BATOOL</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+            <p> Hi,I am Ilham Batool, a BS Software Engineering student passionate about web development and programming
+                in C++. I love building creative projects and exploring new technologies. <br>Here is my live <a href=""
+                    target="_blank">portfolio</a></p>
+            <img src="pfpp.jpg" alt="pfp">
+        </section>
+        <section id="education" class="about">
+            <table>
+                <h2>Education</h2>
+                <tr>
+                    <th>Name</th>
+                    <td>Ilham batool</td>
+                </tr>
+                <tr>
+                    <th>University</th>
+                    <td>IIUI</td>
+                </tr>
+                <tr>
+                    <th>Department</th>
+                    <td>Software Engineering</td>
+                </tr>
+                <tr>
+                    <th>Semester</th>
+                    <td>3rd</td>
+                </tr>
+            </table>
+        </section>
+        <section id="projects" class="projects">
+            <h2>PROJECTS</h2>
+            <ol>
+                <li>Uni management system using oop which provides these functionalities: adding, storing, updating and
+                    deleting students and faculty records...it also calculates faculty salary depending on credit
+                    hours(c++).</li><br>
+                <li>Bank management system using oop that includes creating account for a user, saving their
+                    information, updating amount when user deposits or withdraws money(c++).</li> <br>
+                <li>Game: you have to save the village by answering and choosing the correct path(c++).</li><br>
+                <li>portfolio using html and css.</li>
+            </ol>
+        </section>
+        <section id="skills" class="skills">
+            <h2>SKILLS</h2>
+            <div class="skill">
+                <div><img src="html.png" alt="html">
+                    <p>HTML</p>
+                </div>
+                <div><img src="css.png" alt="css">
+                    <p>CSS</p>
+                </div>
+                <div><img src="js.png" alt="js">
+                    <p></p>JAVASCRIPT</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div>
+                <form action="">
+                    <label for="name">YOUR NAME: </label><br>
+                    <input type="text" id="name" placeholder="abc"><br>
+                    <label for="email">YOUR EMAIL: </label><br>
+                    <input type="email" id="email" placeholder="abc@gmail.com"><br>
+                    <label for="msg">YOUR NAME: </label><br>
+                    <textarea id="msg">ENTER YOUR MSG</textarea><br>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ilham Batool |<span> All Rights Reserved</span></p>
+    </footer>
+</body>
+
+</html>
